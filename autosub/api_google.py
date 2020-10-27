@@ -18,7 +18,7 @@ from autosub import constants
 if constants.IS_GOOGLECLOUDCLIENT:
     from google.cloud import speech_v1p1beta1
     from google.protobuf.json_format import MessageToDict
-    from google.cloud.speech_v1p1beta1 import enums
+    # from google.cloud.speech_v1p1beta1 import enums
 else:
     speech_v1p1beta1 = None  # pylint: disable=invalid-name
     MessageToDict = None  # pylint: disable=invalid-name
